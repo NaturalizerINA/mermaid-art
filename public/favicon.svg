@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <defs>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB" />
+      <stop offset="50%" stop-color="#4F46E5" />
+      <stop offset="100%" stop-color="#7C3AED" />
+    </linearGradient>
+    <linearGradient id="bridgeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#93C5FD" />
+      <stop offset="100%" stop-color="#C4B5FD" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="1" stdDeviation="1" flood-opacity="0.25" flood-color="#000000" />
+    </filter>
+  </defs>
+
+  <!-- Background Squircle -->
+  <rect width="32" height="32" rx="8.5" fill="url(#brandGrad)" />
+
+  <!-- Inner Subtle Border -->
+  <rect x="0.75" y="0.75" width="30.5" height="30.5" rx="7.75" stroke="white" stroke-opacity="0.2" stroke-width="1.5" />
+
+  <!-- 'A' Structure - Legs & Diagram Flow -->
+  <g filter="url(#glow)">
+    <!-- Left Leg Flow -->
+    <path d="M16 8.5L8.5 24" stroke="white" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" />
+    
+    <!-- Right Leg Flow -->
+    <path d="M16 8.5L23.5 24" stroke="white" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" />
+    
+    <!-- Crossbar / Horizontal Flow Bridge -->
+    <path d="M11.5 17.5H20.5" stroke="url(#bridgeGrad)" stroke-width="2.6" stroke-linecap="round" />
+    
+    <!-- Apex Node -->
+    <circle cx="16" cy="7.5" r="2.2" fill="white" />
+    <circle cx="16" cy="7.5" r="1.1" fill="#4F46E5" />
+
+    <!-- Left Base Node -->
+    <circle cx="8.5" cy="24" r="2.2" fill="white" />
+    
+    <!-- Right Base Node -->
+    <circle cx="23.5" cy="24" r="2.2" fill="white" />
+
+    <!-- Center Bridge Node -->
+    <rect x="14.25" y="15.75" width="3.5" height="3.5" rx="1" fill="white" />
+    <rect x="15" y="16.5" width="2" height="2" rx="0.5" fill="#2563EB" />
+  </g>
+</svg>
