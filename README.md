@@ -1,1 +1,1 @@
-# MermaidArt
+# 🌊 MermaidArt — Live Mermaid & Markdown Diagram Studio & Exporter
